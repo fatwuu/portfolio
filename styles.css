@@ -1,0 +1,230 @@
+@font-face { 
+  font-family: 'CircularStd-black';
+  src: url('Fonts/CircularStd-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CircularStd-medium';
+  src: url('Fonts/CircularStd-Medium.woff') format('woff');
+}
+
+body{
+  background-color: #191414;
+  color:aliceblue;
+  font-family: 'CircularStd-black';
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title{
+  color:#1DB954;
+}
+
+li,a {
+  text-decoration: none;
+  color:#1DB954;
+}
+
+.nav_links li{
+  text-decoration: none;
+  display:inline-block;
+  padding: 0px 25px;
+  color:(30,215,96);
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.nav_links li a:hover{
+  color:aliceblue;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+section{
+  min-height: 100vh;
+}
+
+#one {
+  padding-top: 15vh;
+  text-align: left;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+#headshot{
+  position: absolute;
+  top: 150px;
+  right: 290px;
+  width: 400px;
+  height:auto;
+  border-radius: 30px;
+}
+
+#two {
+  text-align: left;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+#three {
+  font-size: 100px;
+  line-height: 60%;
+}
+
+#four{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding-bottom: 40vh;
+  text-align: center;
+}
+
+#name{
+  color: #1DB954;
+}
+
+.hidden{
+  opacity:0;
+  filter:blur(5px);
+  transform: translateX(-100%);
+  transition:all 1s;
+}
+
+.show {
+  opacity:1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+  .hidden{
+    transition:none;
+  }
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background:#fff ;
+  margin:20px;
+  font-size: 50px;
+  line-height: 100px;
+  overflow: hidden;
+  box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.icon:hover{
+  width: 400px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+  color:aliceblue;
+  transition: all 0.3s ease 0s;
+}
+
+.icon:hover i{
+  color:aliceblue;
+}
+
+.icon .fa-facebook-f{
+  color: #1a6ed8;
+}
+
+.fb:hover{
+  background:#1a6ed8
+}
+
+
+.icon .fa-linkedin-in{
+  color: #0077b5;
+}
+
+.link:hover{
+  background:#0077b5
+}
+
+
+.icon .fa-instagram{
+  color: #FD1D1D;
+}
+
+.ins:hover{
+  background:#FD1D1D;
+}
+
+.icon .fa-github{
+  color: #6e5494;
+}
+
+.git:hover{
+  background:#6e5494;
+}
+
+
+/*calculator.html*/
+
+button{
+  width:100px;
+  height:100px;
+  border-radius: 50px;
+  border:none;
+  background-color: #1DB954;
+  color:aliceblue;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: aliceblue;
+  color:#1DB954;
+  transition: all 0.3s ease 0s;
+}
+
+button:active{
+  background-color: #1DB954;
+  color:aliceblue;
+}
+
+#keys{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding:25px;
+}
+
+#calculator{
+  background-color: hsl(0,0%,15%);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow:hidden; 
+}
+
+#display{
+  width:100%;
+  padding:20px;
+  font-size: 5rem;
+  text-align: left;
+  border:none;
+  background-color:hsl(0,0%,20%); ;
+  color:aliceblue;
+}
+
+.operator-btn{
+  background-color:#7dc095 ;
+}
